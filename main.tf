@@ -4,6 +4,7 @@ module "vpc" {
 
 module "alb" {
   source = "./modules/alb"
+
   public_subnets = module.vpc.public_subnets
 }
 
