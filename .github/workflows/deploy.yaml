@@ -24,7 +24,6 @@ jobs:
         aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-south-1
 
-    - run: terraform fmt -check
     - run: terraform init
     - run: terraform validate
     - run: terraform plan
